@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="weather.svg" type="image.svg">
+    <title>Weather Wizard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5ecd1d5ec2.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <audio src="#" loop autoplay></audio>
+    <!-- <div class="geo">
+      <button class="geolocation-btn"> <i
+          class="fa-solid fa-location-dot"></i></button>
+    </div> -->
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter city name" spellcheck="false">
+        <!-- <button><img src="search.png"></button> -->
+        <!-- Update the button element -->
+        <button id="searchButton"><img src="search.png"
+            class="button-icon"><span class="button-text">Search</span></button>
+
+      </div>
+
+      <div class="weather">
+        <img src="clear.png" class="weather-icon">
+        <h1 class="temp">0°c</h1>
+        <h2 class="city">Your city</h2>
+        <h3 id="curr">Date</h3>
+        <h6 id="des">Description</h6>
+        <!-- <p id="aqiDisplay">AQI:</p> -->
+        <div class="details">
+          <div class="col">
+            <img src="humidity.png">
+            <div>
+              <p class="humidity">0%</p>
+              <p>Humidity</p>
+            </div>
+
+          </div>
+          <div class="col">
+            <img src="sun.png" alt>
+            <div>
+              <p class="humidity" id="sunTime">00:00</p>
+              <p style="text-align: center;">Sunrise</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="set.png" alt>
+            <div>
+              <p class="humidity" id="sunsetTime">00:00</p>
+              <p style="text-align: center;">Sunset</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="wind.png">
+            <div>
+              <p class="wind">0 Km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
